@@ -1,11 +1,9 @@
--- Create the Course table
-CREATE TABLE IF NOT EXISTS course (
+CREATE TABLE course (
                                       id INT AUTO_INCREMENT PRIMARY KEY,
                                       name VARCHAR(255) NOT NULL
     );
 
--- Create the Student table
-CREATE TABLE IF NOT EXISTS student (
+CREATE TABLE student (
                                        id INT AUTO_INCREMENT PRIMARY KEY,
                                        full_name_english VARCHAR(255) NOT NULL,
     full_name_arabic VARCHAR(255),
@@ -14,8 +12,7 @@ CREATE TABLE IF NOT EXISTS student (
     address VARCHAR(255)
     );
 
--- Create the Student-Course mapping table
-CREATE TABLE IF NOT EXISTS student_course (
+CREATE TABLE student_course (
                                               id INT AUTO_INCREMENT PRIMARY KEY,
                                               student_id INT NOT NULL,
                                               course_id INT NOT NULL,
