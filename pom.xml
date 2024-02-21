@@ -15,7 +15,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.5.5</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
 
 
@@ -26,7 +26,6 @@
     </properties>
 
     <dependencies>
-        <!-- Spring Boot Starter Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -38,49 +37,34 @@
             <version>20190722</version>
         </dependency>
 
-        <!-- Spring Boot Starter Data JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- Spring Boot Starter Security -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-
-       <!--  H2 Database
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-            <version>2.2.224</version>
-        </dependency>-->
-
-      <!--   MySQL Connector
-         Uncomment if you are using MySQL -->
+             
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Spring Boot Starter Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
-        <!-- Springfox Swagger2 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
             <version>${swagger.version}</version>
         </dependency>
 
-        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -90,7 +74,7 @@
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
-            <version>0.9.1</version> <!-- Or the latest version available -->
+            <version>0.9.1</version>
         </dependency>
 
         <dependency>
